@@ -1,0 +1,647 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1340</width>
+    <height>689</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Scorebook</string>
+  </property>
+  <property name="windowOpacity">
+   <double>1.000000000000000</double>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonIconOnly</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="baseballPic">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>60</y>
+      <width>441</width>
+      <height>391</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <disabledoff>baseball.png</disabledoff>
+      <disabledon>baseball.png</disabledon>
+     </iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>500</width>
+      <height>500</height>
+     </size>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="firstBase">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>290</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="secondBase">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>110</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="thirdBase">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>290</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="answer">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>480</y>
+      <width>441</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="answerHere">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>460</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Answer here</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="start">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>740</x>
+      <y>240</y>
+      <width>110</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>START</string>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>16</width>
+      <height>16</height>
+     </size>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="next">
+    <property name="geometry">
+     <rect>
+      <x>740</x>
+      <y>240</y>
+      <width>110</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="mouseTracking">
+     <bool>false</bool>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="locale">
+     <locale language="English" country="UnitedStates"/>
+    </property>
+    <property name="text">
+     <string>Next -&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="done">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>510</y>
+      <width>110</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Done</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="question">
+    <property name="geometry">
+     <rect>
+      <x>226</x>
+      <y>43</y>
+      <width>431</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="homeRuns">
+    <property name="geometry">
+     <rect>
+      <x>740</x>
+      <y>100</y>
+      <width>120</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="awayRuns">
+    <property name="geometry">
+     <rect>
+      <x>75</x>
+      <y>100</y>
+      <width>120</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="outs">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>310</y>
+      <width>56</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Outs: 0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="strikes">
+    <property name="geometry">
+     <rect>
+      <x>770</x>
+      <y>360</y>
+      <width>61</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Strikes: 0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="balls">
+    <property name="geometry">
+     <rect>
+      <x>770</x>
+      <y>320</y>
+      <width>61</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Balls: 0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="disclaimer">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>560</y>
+      <width>1321</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>This program cannot do everything, some things might happen in the game that the program can't handle (especially with the out function).  If that happens, restart the program, and add a reminder to delete the next 1, 2, 3..., lines. </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="disclaimer2">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>590</y>
+      <width>221</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>After the game is over, fix those lines.</string>
+    </property>
+   </widget>
+   <zorder>next</zorder>
+   <zorder>baseballPic</zorder>
+   <zorder>firstBase</zorder>
+   <zorder>secondBase</zorder>
+   <zorder>thirdBase</zorder>
+   <zorder>answer</zorder>
+   <zorder>answerHere</zorder>
+   <zorder>start</zorder>
+   <zorder>done</zorder>
+   <zorder>question</zorder>
+   <zorder>homeRuns</zorder>
+   <zorder>awayRuns</zorder>
+   <zorder>outs</zorder>
+   <zorder>strikes</zorder>
+   <zorder>balls</zorder>
+   <zorder>disclaimer</zorder>
+   <zorder>disclaimer2</zorder>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="cursor">
+    <cursorShape>ArrowCursor</cursorShape>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="allowedAreas">
+    <set>Qt::LeftToolBarArea|Qt::RightToolBarArea|Qt::TopToolBarArea</set>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>25</width>
+     <height>40</height>
+    </size>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextBesideIcon</enum>
+   </property>
+   <property name="floatable">
+    <bool>true</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionSingle"/>
+   <addaction name="actionDouble"/>
+   <addaction name="actionTriple"/>
+   <addaction name="actionHomeRun"/>
+   <addaction name="actionSteal"/>
+   <addaction name="actionHitByPitch"/>
+   <addaction name="actionError"/>
+   <addaction name="actionFoul"/>
+   <addaction name="actionStrike"/>
+   <addaction name="actionBall"/>
+   <addaction name="actionPinchHitter"/>
+   <addaction name="actionOut"/>
+   <addaction name="actionReminder"/>
+  </widget>
+  <action name="actionSingle">
+   <property name="icon">
+    <iconset>
+     <normaloff>single.png</normaloff>single.png</iconset>
+   </property>
+   <property name="text">
+    <string>Single</string>
+   </property>
+   <property name="toolTip">
+    <string>Single</string>
+   </property>
+  </action>
+  <action name="actionOut">
+   <property name="icon">
+    <iconset>
+     <normaloff>out.png</normaloff>out.png</iconset>
+   </property>
+   <property name="text">
+    <string>Out</string>
+   </property>
+  </action>
+  <action name="actionError">
+   <property name="icon">
+    <iconset>
+     <normaloff>error.png</normaloff>error.png</iconset>
+   </property>
+   <property name="text">
+    <string>Error</string>
+   </property>
+  </action>
+  <action name="actionHitByPitch">
+   <property name="icon">
+    <iconset>
+     <normaloff>hitbypitch.png</normaloff>hitbypitch.png</iconset>
+   </property>
+   <property name="text">
+    <string>Hit By Pitch</string>
+   </property>
+  </action>
+  <action name="actionHomeRun">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>homerun.png</normaloff>homerun.png</iconset>
+   </property>
+   <property name="text">
+    <string>Home Run</string>
+   </property>
+  </action>
+  <action name="actionDouble">
+   <property name="icon">
+    <iconset>
+     <normaloff>double.png</normaloff>double.png</iconset>
+   </property>
+   <property name="text">
+    <string>Double</string>
+   </property>
+  </action>
+  <action name="actionTriple">
+   <property name="icon">
+    <iconset>
+     <normaloff>triple.png</normaloff>triple.png</iconset>
+   </property>
+   <property name="text">
+    <string>Triple</string>
+   </property>
+  </action>
+  <action name="actionStrike">
+   <property name="icon">
+    <iconset>
+     <normaloff>strike.png</normaloff>strike.png</iconset>
+   </property>
+   <property name="text">
+    <string>Strike</string>
+   </property>
+  </action>
+  <action name="actionBall">
+   <property name="icon">
+    <iconset>
+     <normaloff>ball.png</normaloff>ball.png</iconset>
+   </property>
+   <property name="text">
+    <string>Ball</string>
+   </property>
+  </action>
+  <action name="actionPinchHitter">
+   <property name="icon">
+    <iconset>
+     <normaloff>pinchhitter.png</normaloff>pinchhitter.png</iconset>
+   </property>
+   <property name="text">
+    <string>Pinch Hitter</string>
+   </property>
+  </action>
+  <action name="actionReminder">
+   <property name="icon">
+    <iconset>
+     <normaloff>reminder.png</normaloff>reminder.png</iconset>
+   </property>
+   <property name="text">
+    <string>Reminder</string>
+   </property>
+  </action>
+  <action name="actionSteal">
+   <property name="icon">
+    <iconset>
+     <normaloff>steal.png</normaloff>steal.png</iconset>
+   </property>
+   <property name="text">
+    <string>Steal</string>
+   </property>
+  </action>
+  <action name="actionFoul">
+   <property name="icon">
+    <iconset>
+     <normaloff>foul.png</normaloff>foul.png</iconset>
+   </property>
+   <property name="text">
+    <string>Foul</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionSingle_2">
+   <property name="text">
+    <string>Single</string>
+   </property>
+  </action>
+  <action name="actionSingle_3">
+   <property name="text">
+    <string>Single</string>
+   </property>
+  </action>
+  <action name="actionDouble_2">
+   <property name="text">
+    <string>Double</string>
+   </property>
+  </action>
+  <action name="actionTriple_2">
+   <property name="text">
+    <string>Triple</string>
+   </property>
+  </action>
+  <action name="actionSingle_4">
+   <property name="text">
+    <string>Single</string>
+   </property>
+  </action>
+  <action name="actionDouble_3">
+   <property name="text">
+    <string>Double</string>
+   </property>
+  </action>
+  <action name="actionTriple_3">
+   <property name="text">
+    <string>Triple</string>
+   </property>
+  </action>
+  <action name="actionHome_run">
+   <property name="text">
+    <string>Home Run</string>
+   </property>
+  </action>
+  <action name="actionSteal_2">
+   <property name="text">
+    <string>Steal</string>
+   </property>
+  </action>
+  <action name="actionHit_By_Pitch">
+   <property name="text">
+    <string>Hit By Pitch</string>
+   </property>
+  </action>
+  <action name="actionError_2">
+   <property name="text">
+    <string>Error</string>
+   </property>
+  </action>
+  <action name="actionFoul_2">
+   <property name="text">
+    <string>Foul</string>
+   </property>
+  </action>
+  <action name="actionStrike_2">
+   <property name="text">
+    <string>Strike</string>
+   </property>
+  </action>
+  <action name="actionBall_2">
+   <property name="text">
+    <string>Ball</string>
+   </property>
+  </action>
+  <action name="actionPinch_Hitter">
+   <property name="text">
+    <string>Pinch Hitter</string>
+   </property>
+  </action>
+  <action name="actionOut_2">
+   <property name="text">
+    <string>Out</string>
+   </property>
+  </action>
+  <action name="actionReminder_2">
+   <property name="text">
+    <string>Reminder</string>
+   </property>
+  </action>
+  <action name="actionExit_2">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionSingle_5">
+   <property name="text">
+    <string>Single</string>
+   </property>
+  </action>
+  <action name="actionDouble_4">
+   <property name="text">
+    <string>Double</string>
+   </property>
+  </action>
+  <action name="actionHome_Run">
+   <property name="text">
+    <string>Triple</string>
+   </property>
+  </action>
+  <action name="actionHome_Run_2">
+   <property name="text">
+    <string>Home Run</string>
+   </property>
+  </action>
+  <action name="actionSteal_3">
+   <property name="text">
+    <string>Steal</string>
+   </property>
+  </action>
+  <action name="actionHit_By_Pitch_2">
+   <property name="text">
+    <string>Hit By Pitch</string>
+   </property>
+  </action>
+  <action name="actionError_3">
+   <property name="text">
+    <string>Error</string>
+   </property>
+  </action>
+  <action name="actionFoul_3">
+   <property name="text">
+    <string>Foul</string>
+   </property>
+  </action>
+  <action name="actionStrike_3">
+   <property name="text">
+    <string>Strike</string>
+   </property>
+  </action>
+  <action name="actionBall_3">
+   <property name="text">
+    <string>Ball</string>
+   </property>
+  </action>
+  <action name="actionPinch_Hitter_2">
+   <property name="text">
+    <string>Pinch Hitter</string>
+   </property>
+  </action>
+  <action name="actionOut_3">
+   <property name="text">
+    <string>Out</string>
+   </property>
+  </action>
+  <action name="actionReminder_3">
+   <property name="text">
+    <string>Reminder</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
